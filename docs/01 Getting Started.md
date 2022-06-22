@@ -4,7 +4,8 @@ stoplight-id: 6enkuv8yb2xa3
 
 # Getting Started
 
-![sifchain-gold-logo.png](https://stoplight.io/api/v1/projects/cHJqOjEzNDUzOA/images/Obf4rVj8WAY)
+
+![Sifchain Gold Logo.png](https://stoplight.io/api/v1/projects/cHJqOjE0MDgzNw/images/PUu2kq1VfnY)
 
 
 <p style="text-align: center;">⚡️ T H E &nbsp;&nbsp; O M N I C H A I N &nbsp;&nbsp; J A V A S C R I P T &nbsp;&nbsp; L I B R A R Y ⚡️</p>
