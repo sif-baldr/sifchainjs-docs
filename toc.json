@@ -55,12 +55,8 @@
       "uri": "/docs/02 Sifchain Data API/Sifchain-ETL.md"
     },
     {
-      "type": "divider",
-      "title": "APIS"
-    },
-    {
       "type": "item",
-      "title": "Sichain Data API",
+      "title": "Sichain Data API Endpoints",
       "uri": "/openapi.yml"
     }
   ]
