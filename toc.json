@@ -41,6 +41,11 @@
     },
     {
       "type": "item",
+      "title": "Getting Started",
+      "uri": "/docs/02 Sifchain Data API/Getting-Started.md"
+    },
+    {
+      "type": "item",
       "title": "Sifchain Data API",
       "uri": "/docs/02 Sifchain Data API/Sifchain-Data-API.md"
     },
