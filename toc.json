@@ -1,0 +1,62 @@
+{
+  "items": [
+    {
+      "type": "divider",
+      "title": "SifchainJS"
+    },
+    {
+      "type": "item",
+      "title": "Getting Started",
+      "uri": "/docs/01 SifchainJS/01 Getting Started.md"
+    },
+    {
+      "type": "item",
+      "title": "Sandbox",
+      "uri": "/docs/01 SifchainJS/02 Sandbox.md"
+    },
+    {
+      "type": "group",
+      "title": "Developer Guides",
+      "items": [
+        {
+          "type": "item",
+          "title": "Transfer tokens to another Sifchain account",
+          "uri": "/docs/01 SifchainJS/Developer Guides/01 Transfer tokens to another wallet.md"
+        },
+        {
+          "type": "item",
+          "title": "SWAP one token for another",
+          "uri": "/docs/01 SifchainJS/Developer Guides/02 SWAP one token for another.md"
+        },
+        {
+          "type": "item",
+          "title": "Import token via IBC and Add Liquidity",
+          "uri": "/docs/01 SifchainJS/Developer Guides/03 Import token via IBC and Add Liquidity.md"
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "title": "Sifchain Data API"
+    },
+    {
+      "type": "item",
+      "title": "Sifchain Data API",
+      "uri": "/docs/02 Sifchain Data API/Sifchain-Data-API.md"
+    },
+    {
+      "type": "item",
+      "title": "Sifchain - Extract Transform Load (ETL)",
+      "uri": "/docs/02 Sifchain Data API/Sifchain-ETL.md"
+    },
+    {
+      "type": "divider",
+      "title": "APIS"
+    },
+    {
+      "type": "item",
+      "title": "Sichain Data API",
+      "uri": "/openapi.yml"
+    }
+  ]
+}
