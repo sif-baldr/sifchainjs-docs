@@ -1,5 +1,5 @@
 ---
-stoplight-id: gp864x3f6je85
+stoplight-id: lpixnimkkn7tl
 tags: [Developer Guides]
 ---
 
@@ -27,8 +27,8 @@ Answer the questions shown in the terminal and at the end a package.json file wi
 }
 ```
 
-Install the SDK
-The Sifnode/IBC version of the SDK is required to send tokens from one wallet to another. To install the general IBC version of the SDK (https://www.npmjs.com/package/@sifchain/stargate) execute the following:
+Install Stargate
+The Sifnode/IBC stargate version is required to send tokens from one sifchain wallet to another. To install this version of Sifchain.js (https://www.npmjs.com/package/@sifchain/stargate) execute the following:
 
 `npm i @sifchain/stargate@snapshot`
 

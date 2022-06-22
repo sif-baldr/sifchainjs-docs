@@ -1,5 +1,5 @@
 ---
-stoplight-id: ephawb2m55yg6
+stoplight-id: 6enkuv8yb2xa3
 ---
 
 # Getting Started
@@ -9,11 +9,32 @@ stoplight-id: ephawb2m55yg6
 
 <p style="text-align: center;">⚡️ T H E &nbsp;&nbsp; O M N I C H A I N &nbsp;&nbsp; J A V A S C R I P T &nbsp;&nbsp; L I B R A R Y ⚡️</p>
 
-<p style="text-align: center;">🤝&nbsp;&nbsp; TRADING BOTS&nbsp;&nbsp; 🤝&nbsp;&nbsp; ARBITRAGE</p>
-
 <p>&nbsp;</p>
 
-This guide will walk through the basic setup required to create a basic application using the **Sifchain Javascript SDK**.
+This guide will walk through the basic setup required to create a basic application using **Sifchain.js**.
+
+## What is Sifchain.js
+Sifchain.js is a group of Javascript packages that allow developers to interact with Sifchain's network and also other chains within the Cosmos ecosystem via the Inter Blockchain Communication (IBC) protocol. It doesn’t stop there as it also allows for exporting and importing tokens to and from Ethereum via our Peggy bridge.
+
+What we did was to mimic the structure of CosmosJs so as to not reinvent the wheel as some of the packages are dependent on CosmosJs. The packages that make up Sifchain.js include:
+- **stargate**: Cosmjs stargate client
+- **eth-sdk**: Peggy client
+- **cosmos-connect**: Cosmos wallet connector
+- **math**: Math utilities for sifchain
+- **proto-types**: Generated sifnode's rpc typescript definitions
+- **common**: Shared utilities, configs and data structures
+- **tsconfig**: tsconfig presets
+- **e2e**: e2e automation tests 
+- **vanir-client**: HTTP client for sifchain Vanir data aggregation service
+
+The main packages include **stargate** and **eth-sdk** with the other packages loaded as dependencies within these two packages.
+
+### Stargate
+This package provides a Stargate client that extends **@cosmjs/stargate** with added type definitions and helpers. You can therefore execute any transaction via the various RPC endpoints within the Sifchain network but there are some handy functions that help with simulating various calculations for example when doing a SWAP as well as functions that remove the complexities of some transaction types. The package is available at https://www.npmjs.com/package/@sifchain/stargate and can be installed using **npm i @sifchain/stargate@snapshot**.
+
+### Eth-SDK
+This package will allow for interacting with the Peggy bridge so that users can import their ERC-20 tokens from Ethereum into Sifchain and also allow for Exporting these tokens back to Ethereum. To install the Ethereum bridge version of Sifchain.js (https://www.npmjs.com/package/@sifchain/eth-sdk) execute the following: **npm i @sifchain/eth-sdk@snapshot**.
+
 
 ## Create a New NPM Project
 
@@ -38,11 +59,9 @@ Answer the questions shown in the terminal and at the end a **package.json** fil
 }
 ```
 
-## Install the SDK
+## Install Stargate
 
-There are currently two flavors of the SDK. One package is geared towards interactions with Sifnode and IBC and the other is focused on connecting to our Ethereum bridge (Peggy).
-
-For this getting started guide we will focus on the standard Sifnode/IBC version of the SDK. To install the general IBC version of the SDK (https://www.npmjs.com/package/@sifchain/stargate) execute the following:
+For this getting started guide we will focus on the standard stargate (Sifnode/IBC) package. To install execute the following command (https://www.npmjs.com/package/@sifchain/stargate):
 
 `npm i @sifchain/stargate@snapshot`
 
@@ -1007,6 +1026,3 @@ This should give a similar output to the following:
 ```
 
 
-## Next Steps
-
-You have just learned how to use the JavaScript SDK to retrieve all Sifchain Pools. Next, take a look at the SDK's reference documentation which covers the Sifchain API ecosystem in more detail.

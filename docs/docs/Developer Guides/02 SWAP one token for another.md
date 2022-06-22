@@ -1,5 +1,5 @@
 ---
-stoplight-id: dmi2cub4tch1m
+stoplight-id: xqqtiise8vszx
 tags: [Developer Guides]
 ---
 
@@ -26,8 +26,8 @@ Answer the questions shown in the terminal and at the end a **package.json** fil
 }
 ```
 
-Install the SDK
-The Sifnode/IBC version of the SDK is required to send tokens from one wallet to another. To install the general IBC version of the SDK (https://www.npmjs.com/package/@sifchain/stargate) execute the following:
+Install Stargate
+The Sifnode/IBC stargate version is required to execute a SWAP transaction. To install this version of Sifchain.js (https://www.npmjs.com/package/@sifchain/stargate) execute the following:
 
 `npm i @sifchain/stargate@snapshot`
 
@@ -127,7 +127,7 @@ main();
 ```
 
 
-### Script Breakdown
+### Code Breakdown
 Firstly lets connect to the query client that will be used to retrieve the token listings from the token registry.
 
 ```js
@@ -171,6 +171,20 @@ const signingClient = await SifSigningStargateClient.connectWithSigner(
        wallet,
    );
 ```
+
+A simulation function is used to calculate the minimum received amount along with the price impact and liquidity provider fee. This value will be used below.
+
+```js
+const swap = await signingClient.simulateSwap(
+       {
+           denom: rowan.denom,
+           amount: Decimal.fromUserInput(rowanSwapAmount, rowan.decimals.toNumber()).atomics,
+       },
+       { denom: usdc.denom },
+       0.05,
+   );
+```
+
 
 Configure the fee that will be paid to execute the transaction:
 
