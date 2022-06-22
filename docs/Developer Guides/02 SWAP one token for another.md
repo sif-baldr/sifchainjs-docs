@@ -27,7 +27,7 @@ Answer the questions shown in the terminal and at the end a **package.json** fil
 ```
 
 Install Stargate
-The Sifnode/IBC stargate version is required to execute a SWAP transaction. To install this version of Sifchain.js (https://www.npmjs.com/package/@sifchain/stargate) execute the following:
+The Sifnode/IBC stargate version is required to execute a SWAP transaction. To install this version of SifchainJS (https://www.npmjs.com/package/@sifchain/stargate) execute the following:
 
 `npm i @sifchain/stargate@snapshot`
 
