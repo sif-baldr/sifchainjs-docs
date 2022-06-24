@@ -12,4 +12,4 @@ Examples of endpoints being used by our third party partners include the followi
 - https://data.sifchain.finance/beta/asset/cmcTotalSupply
 - https://data.sifchain.finance/beta/asset/circulatingsupply
 
-In our bid to make these database records available publicly to anyone we created the Sifchain ETL (which stands for Extract Transform Load) repository which allows anyone to set up their own database with the same data the API endpoints pull from. The repository is located at: https://github.com/Sifchain/sif-etl.
+In our bid to make these database records available publicly to anyone, we created the Sifchain ETL (which stands for Extract Transform Load) repository which allows anyone to set up their own database with the same data the API endpoints pull from. The repository is located at: https://github.com/Sifchain/sif-etl.
