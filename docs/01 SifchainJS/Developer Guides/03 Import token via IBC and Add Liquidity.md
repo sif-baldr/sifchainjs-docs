@@ -65,7 +65,6 @@ async function main() {
         .then((x) => x.registry?.entries);
 
     const rowan = tokenEntries?.find((x) => x.baseDenom === "rowan");
-    const usdc = tokenEntries?.find((x) => x.baseDenom === "cusdc");
     const juno = tokenEntries?.find((x) => x.baseDenom === "ujuno");
 
     const mnemonic = `${process.env.MNEMONIC}`;
@@ -84,9 +83,6 @@ async function main() {
         "https://rpc-juno-ia.notional.ventures",
         wallet2,
     );
-
-    //const rowanSwapAmount = "1000000000000000000";
-    const rowanSwapAmount = "1";
 
     const junoFee = {
         amount: [
@@ -120,12 +116,12 @@ async function main() {
         },
         "transfer",
         undefined,
-        undefined,
+        Math.floor(Date.now() / 1000) + 60,
         junoFee,
     );
 
-    const nativeAssetAmount = "2.59192";
-    const externalAssetAmount = "0.00500";
+    const nativeAssetAmount = "0.41203";
+    const externalAssetAmount = "0.001";
 
     // Add Liquidity
     await sifchainSigningClient.signAndBroadcast(
@@ -149,3 +145,86 @@ async function main() {
 main();
 ```
 
+### Script Breakdown
+
+#### Get token entries
+Firstly we need to get the token entries for ROWAN and JUNO. This will allow us to get the right decimals for each token and the correct denom which in JUNOs case will be the IBC denom when executing the add liquidity transaction.
+
+```js
+const rowan = tokenEntries?.find((x) => x.baseDenom === "rowan");
+const juno = tokenEntries?.find((x) => x.baseDenom === "ujuno");
+```
+
+
+#### Wallets and Signing Clients
+We need to initialize two separate wallet objects for each as the import transaction will require us to connect to the JUNO chain.
+
+
+   ```js
+const wallet = await DirectSecp256k1HdWallet.fromMnemonic(mnemonic, { prefix: "sif" });
+   const wallet2 = await DirectSecp256k1HdWallet.fromMnemonic(mnemonic, { prefix: "juno" });
+   const [firstAccount] = await wallet.getAccounts();
+ 
+   // Create the Sifchain signing client
+   const sifchainSigningClient = await SifSigningStargateClient.connectWithSigner(
+       "https://rpc.sifchain.finance",
+       wallet,
+   );
+ 
+   // Create the Juno signing client
+   const junoSigningClient = await SifSigningStargateClient.connectWithSigner(
+       "https://rpc-juno-ia.notional.ventures",
+       wallet2,
+   );
+```
+
+#### Import Token
+We can now import JUNO from the JUNO chain to Sifchain. The timeoutHeight or timeoutTimestamp value is required but the example sets the timeoutTimestamp by executing the following Math.floor(Date.now() / 1000) + 60 and leaving the other value undefined.
+
+```js
+await sifchainSigningClient.importIBCTokens(
+       junoSigningClient,
+       "juno1lfuz8dn5nww43q933q3ft8pknlutf2y37u25ja",
+       "sif1lfuz8dn5nww43q933q3ft8pknlutf2y3dnxe62",
+       {
+           denom: "ujuno",
+           amount: Decimal.fromUserInput("0.01", 6).atomics,
+       },
+       "transfer",
+       undefined,
+       Math.floor(Date.now() / 1000) + 60,
+       junoFee,
+   );
+```
+
+#### Add Liquidity
+After the tokens are imported we can then add liquidity using the following. To make sure the values were imported successfully a check can be done to see if the values were imported and a timeout done to do additional checks to make sure before ending closing the script. In this example the token amounts to be added to the liquidity pool are manually set but you could do the necessary calculations to make sure the ratio is correct.
+
+```js
+const nativeAssetAmount = "0.41203";
+   const externalAssetAmount = "0.001";
+ 
+   // Add Liquidity
+   await sifchainSigningClient.signAndBroadcast(
+       firstAccount.address,
+       [
+           {
+               typeUrl: "/sifnode.clp.v1.MsgAddLiquidity",
+               value: {
+                   signer: firstAccount.address,
+                   externalAsset: { symbol: juno.denom.toString() },
+                   nativeAssetAmount: Decimal.fromUserInput(nativeAssetAmount, rowan.decimals.toNumber()).atomics,
+                   externalAssetAmount: Decimal.fromUserInput(externalAssetAmount, juno.decimals.toNumber()).atomics,
+               },
+           },
+       ],
+       fee,
+       "",
+   );
+```
+
+
+## Execute Script
+Execute the following command in your terminal:
+
+`importAddLiquidity.ts`
