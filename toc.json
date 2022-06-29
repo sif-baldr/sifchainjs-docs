@@ -30,7 +30,7 @@
         },
         {
           "type": "item",
-          "title": "Import token via IBC and Add Liquidity",
+          "title": "Import tokens via IBC and Add Liquidity",
           "uri": "/docs/01 SifchainJS/Developer Guides/03 Import token via IBC and Add Liquidity.md"
         }
       ]
