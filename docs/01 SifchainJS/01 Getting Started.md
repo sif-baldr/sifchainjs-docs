@@ -33,7 +33,7 @@ The main packages include **stargate** and **evm** with the other packages loade
 ### Stargate
 This package provides a Stargate client that extends **@cosmjs/stargate** with added type definitions and helpers. You can therefore execute any transaction via the various RPC endpoints within the Sifchain network but there are some handy functions that help with simulating various calculations for example when doing a SWAP as well as functions that remove the complexities of some transaction types. The package is available at https://www.npmjs.com/package/@sifchain/stargate and can be installed using **npm i @sifchain/stargate@snapshot**.
 
-### Eth-SDK
+### EVM
 This package will allow for interacting with the Peggy bridge so that users can import their ERC-20 tokens from Ethereum into Sifchain and also allow for Exporting these tokens back to Ethereum. To install the Ethereum bridge version of SifchainJS (https://www.npmjs.com/package/@sifchain/evm) execute the following: **npm i @sifchain/evm@snapshot**.
 
 
