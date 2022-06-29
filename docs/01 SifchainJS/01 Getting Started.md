@@ -39,7 +39,7 @@ This package will allow for interacting with the Peggy bridge so that users can 
 
 ## Create a New NPM Project
 
-> **Example Compatible with:** @sifchain/stargate v0.0.0-snapshot.0833b21 (https://www.npmjs.com/package/@sifchain/stargate/v/0.0.0-snapshot.0833b21)
+> **Example Compatible with:** @sifchain/stargate 0.0.0-snapshot.0833b21 (https://www.npmjs.com/package/@sifchain/stargate/v/0.0.0-snapshot.0833b21)
 
 Create a folder to store your project and within that folder execute the following command to initialize a NPM project:
 

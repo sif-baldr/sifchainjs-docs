@@ -6,7 +6,7 @@ stoplight-id: 25b0ca1mje2rp
 
 For this guide we will walk through the process of Importing a token from the JUNO network to your Sifchain account and then use that token along with ROWAN to add liquidity in the JUNO liquidity pool.
 
-> **Example Compatible with:** @sifchain/stargate v0.0.0-snapshot.0833b21 (https://www.npmjs.com/package/@sifchain/stargate/v/0.0.0-snapshot.0833b21)
+> **Example Compatible with:** @sifchain/stargate 0.0.0-snapshot.0833b21 (https://www.npmjs.com/package/@sifchain/stargate/v/0.0.0-snapshot.0833b21)
 
 ## Create a New NPM Project
 Create a folder to store your project and within that folder execute the following command to initialize a NPM project:

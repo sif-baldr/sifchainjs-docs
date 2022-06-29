@@ -5,7 +5,7 @@ tags: [Developer Guides]
 
 # SWAP one token for another
 
-> **Example Compatible with:** @sifchain/stargate v0.0.0-snapshot.0833b21 (https://www.npmjs.com/package/@sifchain/stargate/v/0.0.0-snapshot.0833b21)
+> **Example Compatible with:** @sifchain/stargate 0.0.0-snapshot.0833b21 (https://www.npmjs.com/package/@sifchain/stargate/v/0.0.0-snapshot.0833b21)
 
 ## Create a New NPM Project
 Create a folder to store your project and within that folder execute the following command to initialize a NPM project:
