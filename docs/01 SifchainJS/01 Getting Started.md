@@ -66,7 +66,7 @@ Answer the questions shown in the terminal and at the end a **package.json** fil
 
 For this getting started guide we will focus on the standard stargate (Sifnode/IBC) package. To install execute the following command (https://www.npmjs.com/package/@sifchain/stargate):
 
-`npm i @sifchain/stargate@snapshot`
+`npm i @sifchain/stargate@0.0.0-snapshot.0833b21`
 
 
 ## Get List of Liquidity Pools

@@ -32,7 +32,7 @@ Answer the questions shown in the terminal and at the end a package.json file wi
 Install Stargate
 The Sifnode/IBC stargate version is required to send tokens from one sifchain wallet to another. To install this version of SifchainJS (https://www.npmjs.com/package/@sifchain/stargate) execute the following:
 
-`npm i @sifchain/stargate@snapshot`
+`npm i @sifchain/stargate@0.0.0-snapshot.0833b21`
 
 
 ## Create Script
