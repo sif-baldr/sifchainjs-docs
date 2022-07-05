@@ -9,7 +9,7 @@ The Sif API repository can be found here: https://github.com/Sifchain/sif-apis. 
 
 You can follow the instruction and create your own database by:
 - Fetching data through setting up your own ETL processes through [sif-etl](https://github.com/Sifchain/sif-etl)
-- Populating it with the Sifchain database (you will need to ask for credentials on [Discord](http://discord.gg/invite/sifchain) in the sdk-integrations [sdk-integrations channel](http://discord.gg/invite/sifchain)
+- Populating it with the Sifchain database (you will need to ask for credentials on [Discord](http://discord.gg/invite/sifchain) in the sdk-integrations [sdk-integrations channel](https://discord.com/channels/769209144515100693/854293681253908500)
 
 For more details, you can look at the following walkthough video: [video tutorial](https://www.youtube.com/watch?v=2AzXeJ8xNMA&t=461s)
 
