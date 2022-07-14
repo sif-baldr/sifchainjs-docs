@@ -38,7 +38,7 @@
     {
       "type": "item",
       "title": "Sifnode Endpoints",
-      "uri": "/swagger.yaml"
+      "uri": "/swagger-2.yaml"
     },
     {
       "type": "divider",
