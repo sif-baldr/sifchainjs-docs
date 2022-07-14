@@ -2777,3 +2777,6 @@ definitions:
           the packet level. i.e rowan -> microrowan i.e microrowan -> microrowan
       ibc_counterparty_chain_id:
         type: string
+schemes:
+  - https
+host: api.sifchain.finance
