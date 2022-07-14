@@ -36,6 +36,11 @@
       ]
     },
     {
+      "type": "item",
+      "title": "Sifnode Endpoints",
+      "uri": "/swagger.yaml"
+    },
+    {
       "type": "divider",
       "title": "Sifchain Data API"
     },
