@@ -38,7 +38,7 @@
     {
       "type": "item",
       "title": "Sifnode Query Endpoints",
-      "uri": "/sifnode.swagger.json"
+      "uri": "/sifnode.swagger.yml"
     },
     {
       "type": "divider",
