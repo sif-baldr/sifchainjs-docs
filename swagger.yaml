@@ -113,8 +113,13 @@ paths:
           in: query
           required: false
           type: boolean
+        - type: string
+          in: header
+        - type: string
+          in: query
       tags:
         - Query
+      summary: ''
   /sifchain/clp/v1/liquidity_protection_params:
     get:
       operationId: GetLiquidityProtectionParams
