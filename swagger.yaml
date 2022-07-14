@@ -1,10 +1,13 @@
 swagger: '2.0'
 x-stoplight:
-  id: gqnnhtgifa4nh
+  id: woibyi1owqv7y
 info:
   title: Sifchain - gRPC Gateway docs
   description: A REST interface for state queries
   version: 1.0.0
+servers:
+  - url: 'https://api.sifchain.finance'
+    description: Betanet API Data
 paths:
   '/sifchain/clp/v1/asset_list/{lp_address}':
     get:
