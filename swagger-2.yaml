@@ -6,8 +6,8 @@ info:
   description: A REST interface for state queries
   version: 1.0.0
 servers:
-  - url: 'https://api.sifchain.finance'
-    description: Betanet API Data
+  - url: 'https://data.sifchain.finance/beta'
+    description: API Gateway
 paths:
   '/sifchain/clp/v1/asset_list/{lp_address}':
     get:
@@ -113,8 +113,7 @@ paths:
           in: query
           required: false
           type: boolean
-      tags:
-        - Query
+      summary: Sifnode API Endpoints
   /sifchain/clp/v1/liquidity_protection_params:
     get:
       operationId: GetLiquidityProtectionParams
