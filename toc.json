@@ -32,6 +32,11 @@
           "type": "item",
           "title": "Import tokens via IBC and Add Liquidity",
           "uri": "/docs/01 SifchainJS/Developer Guides/03 Import token via IBC and Add Liquidity.md"
+        },
+        {
+          "type": "item",
+          "title": "Import token from Ethereum to Sifchain",
+          "uri": "/docs/01 SifchainJS/Developer Guides/04-Import-Token-from-Ethereum-to-Sifchain.md"
         }
       ]
     },
