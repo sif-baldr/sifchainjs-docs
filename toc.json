@@ -40,7 +40,7 @@
         },
         {
           "type": "item",
-          "title": "Import token from Ethereum to Sifchain",
+          "title": "Export token from Sifchain to Ethereum",
           "uri": "/docs/01 SifchainJS/Developer Guides/05-Export-Token-from-Sifchain-to-Ethereum.md"
         }
       ]
