@@ -68,6 +68,17 @@
       "type": "item",
       "title": "Sichain Data API Endpoints",
       "uri": "/openapi.yml"
+    },
+    {
+      "type": "group",
+      "title": "Developer Guides",
+      "items": [
+        {
+          "type": "item",
+          "title": "Build a price alert bot with Sifchain API",
+          "uri": "/docs/02 Sifchain Data API/Developer Guides/01-How-to-build-a-price-alert-bot-with-Sifchain-Data-API.md"
+        }
+      ]
     }
   ]
 }
