@@ -11,7 +11,7 @@ How to build a Telegram bot that allows users to choose a token and a target pri
 
 1. Set up [Sif-APIs](https://github.com/Sifchain/sif-apis)
 
-2. Clone the repository:
+2. Clone the [repository](https://github.com/hungng157/sif-price-alert-bot):
 ```
 git clone https://github.com/hungng157/sif-price-alert-bot
 ```
