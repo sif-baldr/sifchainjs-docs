@@ -229,4 +229,4 @@ const nativeAssetAmount = "0.41203";
 ## Execute Script
 Execute the following command in your terminal:
 
-`importAddLiquidity.ts`
+`ts-node importAddLiquidity.ts`
