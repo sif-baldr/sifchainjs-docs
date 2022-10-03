@@ -42,6 +42,11 @@
           "type": "item",
           "title": "Export token from Sifchain to Ethereum",
           "uri": "/docs/01 SifchainJS/Developer Guides/05-Export-Token-from-Sifchain-to-Ethereum.md"
+        },
+        {
+          "type": "item",
+          "title": "Export token via IBC",
+          "uri": "/docs/01 SifchainJS/Developer Guides/06-Export-Token-via-IBC.md"
         }
       ]
     },
