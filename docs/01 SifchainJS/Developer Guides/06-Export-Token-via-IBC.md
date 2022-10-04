@@ -1,5 +1,6 @@
 ---
 stoplight-id: 4eqzoficbbgvj
+tags: [Developer Guides]
 ---
 
 # Export tokens via IBC
