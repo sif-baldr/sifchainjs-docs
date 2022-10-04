@@ -52,6 +52,11 @@
           "type": "item",
           "title": "Open a Margin Long Trading Position",
           "uri": "docs/01 SifchainJS/Developer Guides/07-Open-Long-Margin-Position.md"
+        },
+        {
+          "type": "item",
+          "title": "Close a Margin Trading Position",
+          "uri": "docs/01 SifchainJS/Developer Guides/08-Close-Margin-Position.md"
         }
       ]
     },

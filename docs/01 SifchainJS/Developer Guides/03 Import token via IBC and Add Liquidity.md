@@ -1,5 +1,6 @@
 ---
 stoplight-id: 25b0ca1mje2rp
+tags: [Developer Guides]
 ---
 
 # Import tokens via IBC and Add Liquidity
