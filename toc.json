@@ -15,6 +15,11 @@
       "uri": "/docs/01 SifchainJS/02 Sandbox.md"
     },
     {
+      "type": "item",
+      "title": "Endpoints",
+      "uri": "/docs/01 SifchainJS/03-Endpoints.md"
+    },
+    {
       "type": "group",
       "title": "Developer Guides",
       "items": [

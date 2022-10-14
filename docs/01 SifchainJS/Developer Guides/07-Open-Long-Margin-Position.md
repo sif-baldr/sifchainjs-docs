@@ -37,9 +37,10 @@ Answer the questions shown in the terminal and at the end a package.json file wi
 }
 ```
 
-## Install @sifchain/stargate and @sifchain/proto-types packages
+## Install necessary packages
+We will use **@sifchain/stargate**, **@sifchain/proto-types** and **@cosmjs/proto-signing** for the script:
 
-`npm i @sifchain/stargate@1.0.0 @sifchain/proto-types@1.0.0`
+`npm i @sifchain/stargate@1.0.0 @sifchain/proto-types@1.0.0 @cosmjs/proto-signing`
 
 ## Create Script
 Create an "**.env**" file which will be used to store your mnemonic and allows for not saving this sensitive information to your source control. In the "**.env**" file add the following:
